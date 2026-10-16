@@ -1,0 +1,76 @@
+{
+  "graphml": "demo.graphml",
+  "parameters": {
+    "delays_us": {
+      "MBH": 20,
+      "RRN": 20,
+      "optical": 50,
+      "rrl": 150,
+      "local": 5
+    },
+    "gm_capacity": 500,
+    "minimum_gms": 2,
+    "max_path_delay_us": 1500,
+    "optical_rule": "path"
+  },
+  "stations": [
+    {
+      "id": "bs_a",
+      "node": "a",
+      "weight": 1
+    },
+    {
+      "id": "bs_b",
+      "node": "b",
+      "weight": 1
+    },
+    {
+      "id": "bs_c",
+      "node": "c",
+      "weight": 10
+    },
+    {
+      "id": "bs_d",
+      "node": "d",
+      "weight": 4
+    }
+  ],
+  "links": [
+    {
+      "source": "a",
+      "target": "b",
+      "key": "ab",
+      "include": true,
+      "kind": "optical",
+      "cost": 0,
+      "lag_group": null
+    },
+    {
+      "source": "a",
+      "target": "d",
+      "key": "ad",
+      "include": true,
+      "kind": "rrl",
+      "cost": 2,
+      "lag_group": null
+    },
+    {
+      "source": "d",
+      "target": "c",
+      "key": "dc",
+      "include": true,
+      "kind": "rrl",
+      "cost": 3,
+      "lag_group": null
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "key": "bc",
+      "include": true,
+      "kind": "rrl",
+      "cost": 9,
+      "lag_group": null
+    }
+  ]
+}

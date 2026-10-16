@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="node" attr.name="net_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="site_name" attr.type="string"/>
+<graph edgedefault="undirected"><node id="a">
+  <data key="d0">A</data>
+  <data key="d1">MBH</data>
+</node>
+<node id="b">
+  <data key="d0">B</data>
+  <data key="d1">MBH</data>
+</node>
+<node id="c">
+  <data key="d0">C</data>
+  <data key="d1">RRN</data>
+</node>
+<node id="d">
+  <data key="d0">D</data>
+  <data key="d1">RRN</data>
+</node>
+<edge source="a" target="b" id="ab"/>
+<edge source="a" target="d" id="ad"/>
+<edge source="b" target="c" id="bc"/>
+<edge source="c" target="d" id="dc"/>
+</graph></graphml>
